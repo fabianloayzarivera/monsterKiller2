@@ -23,7 +23,7 @@
     <ProjectGuid>{BEE198E4-95A6-4F75-9834-3E1069E2E679}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My01project</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -145,14 +145,19 @@
   <ItemGroup>
     <ClInclude Include="bullet.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="monster.h" />
+    <ClInclude Include="mushroom.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="weatherManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="monster.cpp" />
     <ClCompile Include="monsterKiller.cpp" />
     <ClCompile Include="bullet.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="mushroom.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -160,6 +165,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="weatherManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
