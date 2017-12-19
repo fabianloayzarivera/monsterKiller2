@@ -59,7 +59,8 @@ public:
 	bool createFrame();
 	void gameOver();
 	void makeRain();
-
+	void printGameOver();
+	void printHeader();
 };
 
 
